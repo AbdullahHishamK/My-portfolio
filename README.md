@@ -44,7 +44,7 @@ Copy
 Edit
 npm start
 📬 Contact
-Feel free to connect with me on LinkedIn or send an email to your-email@example.com.
+Feel free to connect with me on LinkedIn or send an email to abdullahhisham1010@gmail.com.
 
 Built with ❤️ and passion for web development.
 
