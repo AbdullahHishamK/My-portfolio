@@ -1,10 +1,16 @@
 import React, { useState } from 'react'
+<<<<<<< HEAD
 import { useNavigate, useLocation } from 'react-router-dom'
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
+=======
+
+const Navbar = ({ darkMode, setDarkMode }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+>>>>>>> f38fc1e912dbb525db963f8b41487423a115b219
 
   const scrollToSection = (sectionId) => {
     // If we're not on the main page, navigate to it first
@@ -24,6 +30,13 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       }
     }
     setIsMenuOpen(false); // Close mobile menu after navigation
+<<<<<<< HEAD
+=======
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+>>>>>>> f38fc1e912dbb525db963f8b41487423a115b219
   };
 
   const navigateToSkills = () => {
@@ -36,22 +49,33 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   }; 
 
   return (
+<<<<<<< HEAD
     <nav className="fixed top-0 left-0 right-0 w-full flex items-center justify-between px-4 sm:px-6 py-3 shadow-md bg-white text-[#1c1d25] dark:bg-[#1c1d25] dark:text-[#F3F3F3] transition-colors duration-300 z-50">
       {/* Left Logo */}
       <div className="flex items-center text-xl sm:text-2xl font-bold">
         <button onClick={() => navigate('/')} className="hover:text-blue-400 transition">
           AHK
         </button>
+=======
+    <nav className="w-full flex items-center justify-between px-4 sm:px-6 py-3 shadow-md bg-white text-[#1c1d25] dark:bg-[#1c1d25] dark:text-[#F3F3F3] transition-colors duration-300 relative z-50">
+      {/* Left Logo */}
+      <div className="flex items-center text-xl sm:text-2xl font-bold">
+        AHK
+>>>>>>> f38fc1e912dbb525db963f8b41487423a115b219
       </div>
       
       {/* Desktop Navigation */}
       <ul className="hidden md:flex space-x-8 text-lg font-medium">
         <li><button onClick={() => scrollToSection('home')} className="hover:text-blue-400 transition">Main</button></li>
         <li><button onClick={() => scrollToSection('projects')} className="hover:text-blue-400 transition">Projects</button></li>
+<<<<<<< HEAD
         <li><button onClick={() => scrollToSection('about')} className="hover:text-blue-400 transition">About Me</button></li>
         <li><button onClick={navigateToSkills} className="hover:text-blue-400 transition">Skills</button></li>
         <li><button onClick={() => scrollToSection('contact')} className="hover:text-blue-400 transition">Contact</button></li>
 
+=======
+        <li><button onClick={() => scrollToSection('contact')} className="hover:text-blue-400 transition">Contact</button></li>
+>>>>>>> f38fc1e912dbb525db963f8b41487423a115b219
       </ul>
 
       {/* Right Section - Theme Toggle & Mobile Menu Button */}
@@ -110,6 +134,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               Projects
             </button>
           </li>
+<<<<<<< HEAD
                     <li>
             <button 
               onClick={() => scrollToSection('about')} 
@@ -126,6 +151,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               Skills
             </button>
           </li>
+=======
+>>>>>>> f38fc1e912dbb525db963f8b41487423a115b219
           <li>
             <button 
               onClick={() => scrollToSection('contact')} 

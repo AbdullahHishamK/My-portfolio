@@ -142,8 +142,13 @@ const Projects = ({ darkMode }) => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                     </div>
+<<<<<<< HEAD
                     <h4 className="text-xl font-bold text-gray-800 mb-3">GAME-ON</h4>
                     <p className="text-gray-600 mb-6">Interactive Gaming website</p>
+=======
+                    <h4 className="text-xl font-bold text-gray-800 mb-3">Restaurant Manager</h4>
+                    <p className="text-gray-600 mb-6">Restaurant management & ordering system</p>
+>>>>>>> f38fc1e912dbb525db963f8b41487423a115b219
                     <a
                       href="https://game-on-puce.vercel.app/"
                       target="_blank"
