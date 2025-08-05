@@ -46,7 +46,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       
       {/* Desktop Navigation */}
       <ul className="hidden md:flex space-x-8 text-lg font-medium">
-        <li><button onClick={() => scrollToSection('home')} className="hover:text-blue-400 transition">Main</button></li>
+        <li><button onClick={() => scrollToSection('home')} className="hover:text-blue-400 transition">Home</button></li>
+        <li><button onClick={() => scrollToSection('about')} className="hover:text-blue-400 transition">About</button></li>
         <li><button onClick={() => scrollToSection('projects')} className="hover:text-blue-400 transition">Projects</button></li>
         <li><button onClick={navigateToSkills} className="hover:text-blue-400 transition">Skills</button></li>
         <li><button onClick={() => scrollToSection('contact')} className="hover:text-blue-400 transition">Contact</button></li>
@@ -123,7 +124,15 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               onClick={() => scrollToSection('home')} 
               className="w-full text-left px-6 py-3 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200 font-medium"
             >
-              Main
+              Home
+            </button>
+          </li>
+          <li>
+            <button 
+              onClick={() => scrollToSection('about')} 
+              className="w-full text-left px-6 py-3 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200 font-medium"
+            >
+              About
             </button>
           </li>
           <li>
