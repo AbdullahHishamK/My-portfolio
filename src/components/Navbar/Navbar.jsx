@@ -1,16 +1,10 @@
 import React, { useState } from 'react'
-<<<<<<< HEAD
 import { useNavigate, useLocation } from 'react-router-dom'
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
-=======
-
-const Navbar = ({ darkMode, setDarkMode }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
->>>>>>> f38fc1e912dbb525db963f8b41487423a115b219
 
   const scrollToSection = (sectionId) => {
     // If we're not on the main page, navigate to it first
@@ -30,13 +24,6 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       }
     }
     setIsMenuOpen(false); // Close mobile menu after navigation
-<<<<<<< HEAD
-=======
-  };
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
->>>>>>> f38fc1e912dbb525db963f8b41487423a115b219
   };
 
   const navigateToSkills = () => {
@@ -49,33 +36,20 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   }; 
 
   return (
-<<<<<<< HEAD
     <nav className="fixed top-0 left-0 right-0 w-full flex items-center justify-between px-4 sm:px-6 py-3 shadow-md bg-white text-[#1c1d25] dark:bg-[#1c1d25] dark:text-[#F3F3F3] transition-colors duration-300 z-50">
       {/* Left Logo */}
       <div className="flex items-center text-xl sm:text-2xl font-bold">
         <button onClick={() => navigate('/')} className="hover:text-blue-400 transition">
           AHK
         </button>
-=======
-    <nav className="w-full flex items-center justify-between px-4 sm:px-6 py-3 shadow-md bg-white text-[#1c1d25] dark:bg-[#1c1d25] dark:text-[#F3F3F3] transition-colors duration-300 relative z-50">
-      {/* Left Logo */}
-      <div className="flex items-center text-xl sm:text-2xl font-bold">
-        AHK
->>>>>>> f38fc1e912dbb525db963f8b41487423a115b219
       </div>
       
       {/* Desktop Navigation */}
       <ul className="hidden md:flex space-x-8 text-lg font-medium">
         <li><button onClick={() => scrollToSection('home')} className="hover:text-blue-400 transition">Main</button></li>
         <li><button onClick={() => scrollToSection('projects')} className="hover:text-blue-400 transition">Projects</button></li>
-<<<<<<< HEAD
-        <li><button onClick={() => scrollToSection('about')} className="hover:text-blue-400 transition">About Me</button></li>
         <li><button onClick={navigateToSkills} className="hover:text-blue-400 transition">Skills</button></li>
         <li><button onClick={() => scrollToSection('contact')} className="hover:text-blue-400 transition">Contact</button></li>
-
-=======
-        <li><button onClick={() => scrollToSection('contact')} className="hover:text-blue-400 transition">Contact</button></li>
->>>>>>> f38fc1e912dbb525db963f8b41487423a115b219
       </ul>
 
       {/* Right Section - Theme Toggle & Mobile Menu Button */}
@@ -88,10 +62,36 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         >
           {darkMode ? (
             // Sun icon
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 sm:h-6 sm:w-6 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m8.66-13.66l-.71.71M4.05 19.07l-.71.71M21 12h-1M4 12H3m16.66 5.66l-.71-.71M4.05 4.93l-.71-.71M12 7a5 5 0 100 10 5 5 0 000-10z" /></svg>
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              className="h-5 w-5 sm:h-6 sm:w-6 text-yellow-400" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M12 3v1m0 16v1m8.66-13.66l-.71.71M4.05 19.07l-.71.71M21 12h-1M4 12H3m16.66 5.66l-.71-.71M4.05 4.93l-.71-.71M12 7a5 5 0 100 10 5 5 0 000-10z" 
+              />
+            </svg>
           ) : (
             // Moon icon
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 sm:h-6 sm:w-6 text-gray-800 dark:text-[#F3F3F3]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" /></svg>
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              className="h-5 w-5 sm:h-6 sm:w-6 text-gray-800 dark:text-[#F3F3F3]" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" 
+              />
+            </svg>
           )}
         </button>
 
@@ -134,15 +134,6 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               Projects
             </button>
           </li>
-<<<<<<< HEAD
-                    <li>
-            <button 
-              onClick={() => scrollToSection('about')} 
-              className="w-full text-left px-6 py-3 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200 font-medium"
-            >
-              About Me
-            </button>
-          </li>
           <li>
             <button 
               onClick={navigateToSkills} 
@@ -151,8 +142,6 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               Skills
             </button>
           </li>
-=======
->>>>>>> f38fc1e912dbb525db963f8b41487423a115b219
           <li>
             <button 
               onClick={() => scrollToSection('contact')} 
@@ -167,4 +156,4 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   )
 }
 
-export default Navbar
+export default Navbar;

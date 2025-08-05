@@ -8,15 +8,15 @@ const Projects = ({ darkMode }) => {
   };
 
   return (
-    <div id="projects" className="min-h-screen py-16 px-4 bg-white transition-colors duration-300">
+    <div id="projects" className={`min-h-screen py-16 px-4 transition-colors duration-300 ${darkMode ? 'bg-[#1c1d25]' : 'bg-white'}`}>
       <div className="max-w-7xl mx-auto">
-        <h2 className={`text-6xl font-bold text-center mb-4 ${darkMode ? 'text-[#1c1d25]' : 'text-[#1c1d25]'}`}>Latest Projects</h2>
+        <h2 className={`text-6xl font-bold text-center mb-4 ${darkMode ? 'text-[#F3F3F3]' : 'text-[#1c1d25]'}`}>Latest Projects</h2>
         <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-blue-700 mx-auto mb-16 rounded-full"></div>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* E-commerce Project */}
           <div className="space-y-6">
-            <h3 className={`text-3xl font-bold text-center ${darkMode ? 'text-[#1c1d25]' : 'text-[#1c1d25]'}`}>E-commerce</h3>
+            <h3 className={`text-3xl font-bold text-center ${darkMode ? 'text-[#F3F3F3]' : 'text-[#1c1d25]'}`}>E-commerce</h3>
             <div className="relative w-full h-96 rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-50 to-indigo-100 hover:shadow-3xl transition-all duration-500 transform hover:scale-[1.02] group">
               {iframeErrors.ecommerce ? (
                 <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100">
@@ -54,7 +54,7 @@ const Projects = ({ darkMode }) => {
               {/* Subtle gradient overlay on hover */}
               <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-blue-500 opacity-0 group-hover:opacity-5 transition-opacity duration-500 pointer-events-none rounded-2xl"></div>
             </div>
-            <p className={`text-base leading-relaxed text-center px-4 ${darkMode ? 'text-[#1c1d25]' : 'text-[#1c1d25]'}`}>
+            <p className={`text-base leading-relaxed text-center px-4 ${darkMode ? 'text-[#F3F3F3]' : 'text-[#1c1d25]'}`}>
               Designed and managed a user-friendly eCommerce website to enhance customer experience using React framework
             </p>
             <div className="text-center">
@@ -74,7 +74,7 @@ const Projects = ({ darkMode }) => {
 
           {/* Recipes Project */}
           <div className="space-y-6">
-            <h3 className={`text-3xl font-bold text-center ${darkMode ? 'text-[#1c1d25]' : 'text-[#1c1d25]'}`}>Recipes</h3>
+            <h3 className={`text-3xl font-bold text-center ${darkMode ? 'text-[#F3F3F3]' : 'text-[#1c1d25]'}`}>Recipes</h3>
             <div className="relative w-full h-96 rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-green-50 to-emerald-100 hover:shadow-3xl transition-all duration-500 transform hover:scale-[1.02] group">
               {iframeErrors.recipes ? (
                 <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-green-50 to-emerald-100">
@@ -112,7 +112,7 @@ const Projects = ({ darkMode }) => {
               {/* Subtle gradient overlay on hover */}
               <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-green-500 opacity-0 group-hover:opacity-5 transition-opacity duration-500 pointer-events-none rounded-2xl"></div>
             </div>
-            <p className={`text-base leading-relaxed text-center px-4 ${darkMode ? 'text-[#1c1d25]' : 'text-[#1c1d25]'}`}>
+            <p className={`text-base leading-relaxed text-center px-4 ${darkMode ? 'text-[#F3F3F3]' : 'text-[#1c1d25]'}`}>
               A dynamic and user-friendly recipe website using React, featuring interactive UI, recipe filtering, and seamless navigation.
             </p>
             <div className="text-center">
@@ -130,25 +130,20 @@ const Projects = ({ darkMode }) => {
             </div>
           </div>
 
-          {/* Restaurant Project */}
+          {/* Game-On Project */}
           <div className="space-y-6">
-            <h3 className={`text-3xl font-bold text-center ${darkMode ? 'text-[#1c1d25]' : 'text-[#1c1d25]'}`}>Restaurant</h3>
+            <h3 className={`text-3xl font-bold text-center ${darkMode ? 'text-[#F3F3F3]' : 'text-[#1c1d25]'}`}>Game-On</h3>
             <div className="relative w-full h-96 rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-orange-50 to-red-100 hover:shadow-3xl transition-all duration-500 transform hover:scale-[1.02] group">
-              {iframeErrors.restaurant ? (
+              {iframeErrors.gameon ? (
                 <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-orange-50 to-red-100">
                   <div className="text-center p-8">
                     <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                       <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                     </div>
-<<<<<<< HEAD
                     <h4 className="text-xl font-bold text-gray-800 mb-3">GAME-ON</h4>
                     <p className="text-gray-600 mb-6">Interactive Gaming website</p>
-=======
-                    <h4 className="text-xl font-bold text-gray-800 mb-3">Restaurant Manager</h4>
-                    <p className="text-gray-600 mb-6">Restaurant management & ordering system</p>
->>>>>>> f38fc1e912dbb525db963f8b41487423a115b219
                     <a
                       href="https://game-on-puce.vercel.app/"
                       target="_blank"
@@ -165,22 +160,22 @@ const Projects = ({ darkMode }) => {
               ) : (
                 <iframe
                   src="https://game-on-puce.vercel.app/"
-                  title="Restaurant Website"
+                  title="Game-On Website"
                   className="w-full h-full border-0 rounded-2xl"
                   loading="lazy"
-                  onError={() => handleIframeError('restaurant')}
+                  onError={() => handleIframeError('gameon')}
                 />
               )}
               
               {/* Subtle gradient overlay on hover */}
               <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-orange-500 opacity-0 group-hover:opacity-5 transition-opacity duration-500 pointer-events-none rounded-2xl"></div>
             </div>
-            <p className={`text-base leading-relaxed text-center px-4 ${darkMode ? 'text-[#1c1d25]' : 'text-[#1c1d25]'}`}>
-              A dynamic and user-friendly Restaurant website using React, featuring interactive UI, recipe filtering, and seamless navigation.
+            <p className={`text-base leading-relaxed text-center px-4 ${darkMode ? 'text-[#F3F3F3]' : 'text-[#1c1d25]'}`}>
+              An interactive gaming website featuring modern UI design, smooth animations, and engaging user experience built with React.
             </p>
             <div className="text-center">
               <a
-                href="https://reastraunt.vercel.app/"
+                href="https://game-on-puce.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white font-semibold rounded-full shadow-lg hover:from-blue-600 hover:to-blue-800 transform hover:scale-105 transition-all duration-300"
@@ -198,4 +193,4 @@ const Projects = ({ darkMode }) => {
   )
 }
 
-export default Projects
+export default Projects;
