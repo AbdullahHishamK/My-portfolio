@@ -2,7 +2,7 @@ import React from 'react'
 import asset10 from '../../assets/asset 10.svg'
 import asset11 from '../../assets/asset 11.svg'
 import asset12 from '../../assets/asset 12.svg'
-
+import profileImage from '../../assets/WhatsApp Image 2025-06-18 at 23.28.48_23b3d380.jpg'
 const Home = ({ darkMode }) => {
   const scrollToAbout = () => {
     const aboutSection = document.getElementById('about');
@@ -44,7 +44,15 @@ const Home = ({ darkMode }) => {
       
       {/* Main Content */}
       <div className="relative z-10 flex flex-col items-center">
-        <h1 className="text-4xl font-bold mb-4">Abdullah Hisaham</h1>
+        <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-gradient-to-r from-blue-500 to-blue-700 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+            <img 
+              src={profileImage} 
+              alt="Abdullah Hisham" 
+              className="w-full h-full object-cover"
+            />
+          
+        </div>
+        <h1 className="text-4xl font-bold mb-4">Abdullah Hisham</h1>
         <p className="text-lg mb-6">Frontend developer</p>
         <button
           onClick={scrollToAbout}
